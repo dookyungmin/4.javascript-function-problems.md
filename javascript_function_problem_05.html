@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+      function print_fizz_buzz() {
+	for(var id=1; id<=100; id++){
+		for(var num=1; num<=100; num++){
+			if(id==num)
+			{	
+				if(num%3==0){
+					num="fizz";
+				}else if(num%5==0){
+					num="buzz";
+				}
+
+				if(id%3==0 && id%5==0){
+					num="fizzbuzz";
+				}
+				document.write(id +":" +num);	
+				document.write("<br>");
+			}
+			
+		}
+		
+	}
+      }
+      print_fizz_buzz();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
